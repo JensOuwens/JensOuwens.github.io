@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A filterable index of game development projects.">
+  <title>The Portfolio Codex — Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="folio-page projects-page">
+  <div class="page-frame">
+    <header class="site-header">
+      <a class="brand-mark" href="index.html" aria-label="Return to index"><span>☿</span> MS. 001</a>
+      <nav aria-label="Primary">
+        <a href="index.html">Index</a>
+        <a href="about.html">About</a>
+        <a class="active" href="projects.html" aria-current="page">Projects</a>
+      </nav>
+      <span class="folio-number">37R</span>
+    </header>
+
+    <main class="folio-sheet">
+      <div class="sheet-corner">folio 37r · project index</div>
+      <div class="sheet-rule"></div>
+
+      <section class="projects-heading">
+        <div>
+          <p class="section-kicker">ILLUSTRATED CATALOGUE</p>
+          <h1>Projects</h1>
+          <p>Browse the work by engine, role, duration, status, or keyword.</p>
+        </div>
+        <div class="catalogue-mark" aria-hidden="true">
+          <span>☉</span><span>☿</span><span>♄</span>
+        </div>
+      </section>
+
+      <section class="filter-rail" aria-label="Project filters">
+        <label class="search-field">
+          <span>Search</span>
+          <input id="project-search" type="search" placeholder="title, tag, technology…" autocomplete="off">
+        </label>
+        <label>
+          <span>Length</span>
+          <select id="filter-length"><option value="all">Any</option></select>
+        </label>
+        <label>
+          <span>Engine</span>
+          <select id="filter-engine"><option value="all">Any</option></select>
+        </label>
+        <label>
+          <span>Role</span>
+          <select id="filter-role"><option value="all">Any</option></select>
+        </label>
+        <label>
+          <span>Status</span>
+          <select id="filter-status"><option value="all">Any</option></select>
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="filter-sort">
+            <option value="year-desc">Newest</option>
+            <option value="title-asc">A–Z</option>
+            <option value="length-asc">Shortest</option>
+            <option value="length-desc">Longest</option>
+          </select>
+        </label>
+        <button id="clear-filters" class="text-button" type="button">Reset</button>
+      </section>
+
+      <div class="filter-status"><span id="project-count">Loading…</span><span id="filter-note"></span></div>
+
+      <section id="project-grid" class="project-grid" aria-live="polite"></section>
+      <p id="projects-empty" class="empty-state" hidden>No folios match these filters.</p>
+    </main>
+
+    <footer class="site-footer">
+      <span>☿ 6 SECTIONS / 1 CODEX</span>
+      <span>Each card opens a dynamic project folio.</span>
+      <a href="index.html">Close the codex ←</a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

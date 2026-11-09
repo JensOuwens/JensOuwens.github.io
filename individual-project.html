@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project detail from the portfolio codex.">
+  <title>The Portfolio Codex — Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page">
+  <div class="page-frame">
+    <header class="detail-header">
+      <a href="projects.html" class="back-link">← Project index</a>
+      <span>MS. 001 · DETAIL FOLIO</span>
+      <span id="detail-folio">—</span>
+    </header>
+
+    <main id="project-detail" class="folio-sheet detail-sheet" aria-live="polite">
+      <section class="detail-hero">
+        <div>
+          <p class="section-kicker" id="detail-kicker">PROJECT FOLIO</p>
+          <h1 id="detail-title">Loading…</h1>
+          <p class="detail-hook" id="detail-subtitle"></p>
+        </div>
+        <div class="detail-stamp" id="detail-status">—</div>
+      </section>
+
+      <div class="detail-divider"></div>
+
+      <figure class="detail-hero-image">
+        <img id="detail-image" src="media/project-placeholder.svg" alt="">
+        <figcaption id="detail-caption"></figcaption>
+      </figure>
+
+      <section class="detail-meta-grid">
+        <div><span>YEAR</span><strong id="detail-year">—</strong></div>
+        <div><span>LENGTH</span><strong id="detail-length">—</strong></div>
+        <div><span>ENGINE</span><strong id="detail-engine">—</strong></div>
+        <div><span>ROLES</span><strong id="detail-roles">—</strong></div>
+      </section>
+
+      <section class="detail-intro-grid">
+        <div class="detail-summary">
+          <p class="section-kicker">ABSTRACT</p>
+          <p id="detail-summary">—</p>
+        </div>
+        <aside class="detail-stack">
+          <p class="section-kicker">STACK</p>
+          <div id="detail-stack-list" class="tag-cloud"></div>
+          <p class="section-kicker spaced">TAGS</p>
+          <div id="detail-tags" class="tag-cloud"></div>
+        </aside>
+      </section>
+
+      <section id="detail-sections" class="detail-sections"></section>
+
+      <section class="contribution-grid">
+        <article>
+          <p class="section-kicker">MY CONTRIBUTION</p>
+          <div id="detail-contribution" class="paper-list"></div>
+        </article>
+        <article>
+          <p class="section-kicker">LINKS</p>
+          <div id="detail-links" class="paper-list"></div>
+        </article>
+      </section>
+
+      <section id="detail-gallery-wrap" class="gallery-section" hidden>
+        <div class="gallery-heading"><p class="section-kicker">PLATES</p><span>PROCESS / RESULT</span></div>
+        <div id="detail-gallery" class="gallery-grid"></div>
+      </section>
+
+      <div class="colophon">
+        <span id="detail-colophon">Folio complete.</span>
+        <a href="projects.html">Return to the project index →</a>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#d4c08d"/>
+  <rect x="24" y="24" width="752" height="952" fill="none" stroke="#473a29" stroke-width="5"/>
+  <circle cx="400" cy="358" r="155" fill="none" stroke="#473a29" stroke-width="4"/>
+  <path d="M225 775 C250 610 550 610 575 775" fill="none" stroke="#473a29" stroke-width="6"/>
+  <path d="M160 845 Q400 760 640 845" fill="none" stroke="#7b3e32" stroke-width="3"/>
+  <path d="M120 180 Q250 80 390 170 Q540 55 680 175" fill="none" stroke="#52654d" stroke-width="5"/>
+  <path d="M100 240 Q220 190 300 250 T520 260 T700 235" fill="none" stroke="#52654d" stroke-width="2"/>
+  <g fill="#473a29" font-family="Georgia,serif" text-anchor="middle">
+    <text x="400" y="905" font-size="27" letter-spacing="5">YOUR PORTRAIT</text>
+    <text x="400" y="940" font-size="17" letter-spacing="2">replace media/portrait-placeholder.svg</text>
+  </g>
+</svg>

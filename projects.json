@@ -1,0 +1,352 @@
+{
+  "_schema": "1.0",
+  "_instructions": "Duplicate the template project, give it a unique id, then replace the placeholder fields. Images live in media/.",
+  "projects": [
+    {
+      "id": "AI/Procedural",
+      "draft": true,
+      "title": "AI/Procedural",
+      "subtitle": "A collection of AI and procedural generation experiments, with a focus on generating a playable dungeon from a configurable grid.",
+      "year": 2026,
+      "lengthMonths": 3,
+      "lengthLabel": "3 months",
+      "engine": "Unity",
+      "roles": [
+        "Programming",
+        "System Design"
+      ],
+      "status": "Finished Assignment",
+      "tags": [
+        "Algorithms",
+        "Procedural Generation",
+        "AI",
+        "Systems"
+      ],
+      "hero": "media/Projects/Astar.gif",
+      "heroAlt": "Placeholder project plate",
+      "caption": "Replace this with your strongest project screenshot or key art.",
+      "summary": "This was a solo school assignment in Unity where I explored different AI and procedural algorithms. The repository contains four separate experiments: Boids, a behaviour tree, A* pathfinding and procedural dungeon generation. I designed and programmed the systems myself, using pseudocode to work out the logic before building them. The procedural dungeon is the part I wanted to focus on, because it combines several steps into a single generator that creates a different layout from a seed.",
+      "stack": [
+        "Unity",
+        "C#",
+        "Git"
+      ],
+      "sections": [
+        {
+          "heading": "The brief",
+          "body": "The assignment was split into four separate parts, each focused on a different algorithm. I kept each experiment on its own Git branch so they could be run separately. For the dungeon, the main challenge was turning a grid into a usable layout with rooms, a start point, an exit and content."
+        },
+        {
+          "heading": "What I built",
+          "body": "I focused on the procedural dungeon. It starts by creating a configurable grid with a solid outer border. A seeded random walk then carves out the floor, with a bias towards unvisited cells to help the path explore new space. After that, the generator places rooms, selects the two furthest rooms for the start and boss room, and assigns room types. Finally, it places enemies and treasure in rooms and corridors. I split this process into separate components for grid creation, random walking, room placement, start and exit placement, content placement and rendering. I also made a configuration asset so values such as grid size, walk length, room sizes, spawn chances and the seed can be changed."
+        },
+        {
+          "heading": "What changed",
+          "body": "The result is a dungeon that can be regenerated with different seeds and settings. The other branches contain the Boids, behaviour tree and A* exercises. The A* assignment started from code we were given, so the main focus here is the procedural dungeon generator that I designed and implemented myself."
+        }
+      ],
+      "contribution": [
+        "Designed the algorithm and planned its logic in pseudocode before implementing it.",
+        "Built the Unity dungeon-generation process, from grid creation and random walk to room placement and rendering.",
+        "Implemented configurable room and content placement, including the start and boss rooms, enemies and treasure."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JensOuwens/Ai-Procedural/tree/Procedural-Dungeon"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "media/Projects/AStar.gif",
+          "alt": "Video showcasing Boids",
+          "caption": "Boids algorithm"
+        },
+        {
+          "src": "media/Projects/Boids.gif",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/BehaviourTreeClassDiagram.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/BehaviourTreeStateDiagram.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/Behaviour tree showcase vid.gif",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/ProceduralDungeonClassDiagram.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/Generator showcase.gif",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        }
+      ]
+    },
+    {
+      "id": "Lucid Desync",
+      "draft": true,
+      "title": "Lucid Desync",
+      "subtitle": "A first-person shooter where each new loop changes the rules, forcing the player to adapt to a different way of fighting.",
+      "year": 2026,
+      "lengthMonths": 3,
+      "lengthLabel": "3 months",
+      "engine": "Unity",
+      "roles": [
+        "Programming",
+        "Game Design",
+        "System Design",
+        "Level Design"
+      ],
+      "status": "Unfinished Game",
+      "tags": [
+        "3D",
+        "First-Person",
+        "Combat",
+        "Enemy AI",
+        "Design Patterns"
+      ],
+      "hero": "media/Projects/Present yourself.gif",
+      "heroAlt": "Placeholder project plate",
+      "caption": "Replace this with your strongest project screenshot or key art.",
+      "summary": "This was a solo school assignment built in Unity. I came up with the idea and handled the system design, programming and level design. The game runs in a series of loops, and each new loop changes one or more rules. A weapon that used to need reloading might become a projectile weapon, while movement, gravity or health can also change. My main focus was the enemy design: I made four enemy types that each put pressure on the player in a different way.",
+      "stack": [
+        "Unity",
+        "C#",
+        "NavMesh",
+        "Git"
+      ],
+      "sections": [
+        {
+          "heading": "The brief",
+          "body": "The goal was to build a game around the idea that the rules are never completely stable. Instead of simply restarting the same encounter, each loop introduces a small change to how the game works. That meant the systems needed to be flexible enough to switch player rules while keeping the combat readable."
+        },
+        {
+          "heading": "What I built",
+          "body": "I designed and programmed the core systems in Unity. The loop manager moves the player through each encounter and applies the rules for that loop. I used the Strategy pattern to swap implementations for weapons, movement, health, reloading and gravity, and the Command pattern for player actions. I also created four enemy types. The melee enemy tries to get behind the player before charging in. The projectile enemy attacks from range and repositions after firing. The support enemy buffs nearby enemies and tries to flee when the player spots it. The tank enemy prepares a charge before rushing the player and following up with a heavy melee attack. The enemies share a base class for health and temporary buffs, while each type has its own behaviour."
+        },
+        {
+          "heading": "What changed",
+          "body": "The result is a combat prototype where each enemy has a distinct role, and the changing player rules keep the encounters from playing exactly the same each time. I am especially happy with the enemy mix, because it gives the player different threats to read and prioritise."
+        }
+      ],
+      "contribution": [
+        "Came up with the game concept and designed the level layouts.",
+        "Designed the system architecture, documented it with a class diagram and programmed the loop and rule-switching systems using design patterns.",
+        "Designed and implemented four enemy types, each with a different combat role and behaviour."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JensOuwens/Lucid-Desync/tree/Development"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "media/Projects/Present yourself.gif",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        },
+        {
+          "src": "media/Projects/Shader.gif",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },        {
+          "src": "media/Projects/Lucid Desync.png",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        },
+        {
+          "src": "media/Projects/PresentYourselfClassDiagram.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },        {
+          "src": "media/Projects/OnePageDesignDoc_LucidDesync.png",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        }
+      ]
+    },
+    {
+      "id": "Small Doings",
+      "draft": true,
+      "title": "Small Doings",
+      "subtitle": "A four-player rhythm game where players work together as microorganisms to restore a world by processing water and CO2.",
+      "year": 2026,
+      "lengthMonths": 3,
+      "lengthLabel": "3 months",
+      "engine": "Unity",
+      "roles": [
+        "Programming",
+        "System Design",
+        "Audio",
+        "Game Design"
+      ],
+      "status": "Finished Assignment",
+      "tags": [
+        "2D",
+        "Rhythm",
+        "Multiplayer",
+        "Audio",
+        "Sustainability"
+      ],
+      "hero": "media/Projects/Small-Doings.gif",
+      "heroAlt": "Placeholder project plate",
+      "caption": "Replace this with your strongest project screenshot or key art.",
+      "summary": "This was a school assignment for an exhibition about Earth and sustainability. We made a four-player rhythm game about small microorganisms in the soil that process water and CO2. Each player has to hit their part in time with the beat, and together the players help restore the world as the background changes over time. I worked on the system design and programming, and I also made the music.",
+      "stack": [
+        "Unity",
+        "C#",
+        "Git"
+      ],
+      "sections": [
+        {
+          "heading": "The brief",
+          "body": "We had to create a game that could be played at an exposition and connect it to the Earth and sustainability. We chose microorganisms in the dirt as the theme and built the gameplay around two resources: water and CO2. The game was designed for four players, so the system had to keep track of each player's timing and input."
+        },
+        {
+          "heading": "What I built",
+          "body": "I designed the game's system and made a class diagram to plan how the different parts would communicate. I worked on gameplay code around the music, beat timing and input judgement, and also built parts of the audio and visual feedback. The music player reads the selected song's BPM and tracks its position, while the metronome converts that into beat timing. The judge checks each player's press against the intended beat, including early and late inputs and hold notes. I also worked on sound effects and pitch variation per player, particle effects, and organism animations such as blinking and the hand animations used when they process resources. I created the music and worked with my teammate on the sound effects and composition."
+        },
+        {
+          "heading": "What changed",
+          "body": "The result is an exhibition game where four players need to coordinate with the beat to process water and CO2. The timing feedback and the visual and audio effects make it clear whether each input was on time, and the changing background shows the world's progress."
+        }
+      ],
+      "contribution": [
+        "Designed the core system and documented it with a class diagram.",
+        "Implemented parts of the beat and gameplay pipeline, including music playback and timing, input judgement and hold-note behaviour.",
+        "Created the music and contributed to the sound-effect, particle and organism-animation systems with my teammate."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/JensOuwens/Apply_Your_Rythm/tree/Development"
+        },
+        {
+          "label": "Itch.Io",
+          "url": "https://trash-elf.itch.io/small-doings"
+        },
+        {
+          "label": "Trailer",
+          "url": "https://www.youtube.com/watch?v=ALMMf_l48Bg"
+        }
+
+      ],
+      "gallery": [
+        {
+          "src": "media/Projects/Small-Doings.gif",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        },
+        {
+          "src": "media/Projects/Small-doings.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/Scriptable-Objects.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        },
+        {
+          "src": "media/Projects/AplyYourselfPrototype.png",
+          "alt": "Placeholder result plate",
+          "caption": "Result image"
+        }
+      ]
+    },
+    {
+      "id": "Gluttonous Gallery",
+      "draft": true,
+      "title": "Gluttonous Gallery",
+      "subtitle": "A timed art-making game where you collect odd objects, weld them together and present your creation to a demanding critic.",
+      "year": 2026,
+      "lengthMonths": 3,
+      "lengthLabel": "3 months",
+      "engine": "Unreal Engine",
+      "roles": [
+        "Programming",
+        "Gameplay Design",
+        "Voice Acting"
+      ],
+      "status": "Finished Assignment",
+      "tags": [
+        "3D",
+        "Object Creation",
+        "Gameplay Systems",
+        "Narrative"
+      ],
+      "hero": "media/Projects/Lord Messier2.png",
+      "heroAlt": "Placeholder project plate",
+      "caption": "Replace this with your strongest project screenshot or key art.",
+      "summary": "This was a five-person group assignment inspired by our visit to Design Panoptikum in Berlin. You play as La Lune, an artist who has to create artwork for Lord Messier, an art critic. He gives you a theme, and you have to find random objects and combine them into an artwork before time runs out. You then present it to him and he judges how well it matches the theme. If he is satisfied, he eats the artwork and gives you a new request. The cycle continues until you die.",
+      "stack": [
+        "Unreal Engine",
+        "C++",
+        "Git"
+      ],
+      "sections": [
+        {
+          "heading": "The brief",
+          "body": "We had to make a game based on an experience we had in Berlin. We used Design Panoptikum as inspiration, especially its collection of unusual objects and odd combinations. The project was made by a team of five, and I worked as a programmer rather than the lead."
+        },
+        {
+          "heading": "What I built",
+          "body": "My main programming contribution was the art-creation system. It lets the player combine objects into a single artwork by welding them together, so the player can experiment with combinations such as traffic cones and tyres. I also contributed to gameplay design and voiced Lord Messier, the critic who sets each challenge and judges the result."
+        },
+        {
+          "heading": "What changed",
+          "body": "The result is a loop of collecting, assembling and presenting strange objects under time pressure. The theme-based judgement gives each attempt a goal, while the critic's reaction ties the gameplay back to the game's strange art-world premise."
+        }
+      ],
+      "contribution": [
+        "Programmed the art-creation system used to combine and weld objects into artworks.",
+        "Contributed to gameplay design as part of a five-person team.",
+        "Voiced Lord Messier, the art critic who sets the player's themes and evaluates each creation."
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Roadkill-Studio/GluttonousGallery/tree/Dev"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://thenibbler.itch.io/gluttonous-gallery"
+        },
+        {
+          "label": "Trailer",
+          "url": "https://www.youtube.com/watch?v=NNNW5SdlmzM"
+        }
+      ],
+      "gallery": [
+        {
+          "src": "media/Projects/Lord Messier.png",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        },
+        {
+          "src": "media/Projects/Lord Messier2.png",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        },
+        {
+          "src": "media/Projects/Gameplay.png",
+          "alt": "Placeholder process plate",
+          "caption": "Process image"
+        }
+      ]
+    }
+  ]
+}
