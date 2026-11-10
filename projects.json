@@ -4,7 +4,7 @@
   "projects": [
     {
       "id": "AI/Procedural",
-      "draft": true,
+      "draft": "False",
       "title": "AI/Procedural",
       "subtitle": "A collection of AI and procedural generation experiments, with a focus on generating a playable dungeon from a configurable grid.",
       "year": 2026,
@@ -23,7 +23,7 @@
         "Systems"
       ],
       "hero": "media/Projects/Astar.gif",
-      "heroAlt": "Placeholder project plate",
+      "heroAlt": "AI/Procedural",
       "caption": "Replace this with your strongest project screenshot or key art.",
       "summary": "This was a solo school assignment in Unity where I explored different AI and procedural algorithms. The repository contains four separate experiments: Boids, a behaviour tree, A* pathfinding and procedural dungeon generation. I designed and programmed the systems myself, using pseudocode to work out the logic before building them. The procedural dungeon is the part I wanted to focus on, because it combines several steps into a single generator that creates a different layout from a seed.",
       "stack": [
@@ -59,44 +59,44 @@
       "gallery": [
         {
           "src": "media/Projects/AStar.gif",
-          "alt": "Video showcasing Boids",
+          "alt": "Video showcasing My Astar algorithm",
           "caption": "Boids algorithm"
         },
         {
           "src": "media/Projects/Boids.gif",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "video showcasing boids",
+          "caption": "video showcasing boids"
         },
         {
           "src": "media/Projects/BehaviourTreeClassDiagram.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "the class diagram for my behaviour treee",
+          "caption": "the class diagram for my behaviour treee"
         },
         {
           "src": "media/Projects/BehaviourTreeStateDiagram.png",
-          "alt": "Placeholder result plate",
+          "alt": "the state diagram for my behaviour treee",
           "caption": "Result image"
         },
         {
           "src": "media/Projects/Behaviour tree showcase vid.gif",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Behaviour tree showcase videoe",
+          "caption": "Behaviour tree showcase videoe"
         },
         {
           "src": "media/Projects/ProceduralDungeonClassDiagram.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Procedural dungeon class diagram",
+          "caption": "Procedural dungeon class diagra"
         },
         {
           "src": "media/Projects/Generator showcase.gif",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Proecedural dungeon video",
+          "caption": "Proecedural dungeon video"
         }
       ]
     },
     {
       "id": "Lucid Desync",
-      "draft": true,
+      "draft": "False",
       "title": "Lucid Desync",
       "subtitle": "A first-person shooter where each new loop changes the rules, forcing the player to adapt to a different way of fighting.",
       "year": 2026,
@@ -118,7 +118,7 @@
         "Design Patterns"
       ],
       "hero": "media/Projects/Present yourself.gif",
-      "heroAlt": "Placeholder project plate",
+      "heroAlt": "Lucid Desync",
       "caption": "Replace this with your strongest project screenshot or key art.",
       "summary": "This was a solo school assignment built in Unity. I came up with the idea and handled the system design, programming and level design. The game runs in a series of loops, and each new loop changes one or more rules. A weapon that used to need reloading might become a projectile weapon, while movement, gravity or health can also change. My main focus was the enemy design: I made four enemy types that each put pressure on the player in a different way.",
       "stack": [
@@ -155,32 +155,32 @@
       "gallery": [
         {
           "src": "media/Projects/Present yourself.gif",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "Lucid desync enemy showcase",
+          "caption": "Enemy showcase"
         },
         {
           "src": "media/Projects/Shader.gif",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Shader Showcase",
+          "caption": "Shader Showcase"
         },        {
           "src": "media/Projects/Lucid Desync.png",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "level showcase",
+          "caption": "level showcase"
         },
         {
           "src": "media/Projects/PresentYourselfClassDiagram.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "class diagram lucid desync",
+          "caption": "class diagram"
         },        {
           "src": "media/Projects/OnePageDesignDoc_LucidDesync.png",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "one page design document",
+          "caption": "one page design document"
         }
       ]
     },
     {
       "id": "Small Doings",
-      "draft": true,
+      "draft": "False",
       "title": "Small Doings",
       "subtitle": "A four-player rhythm game where players work together as microorganisms to restore a world by processing water and CO2.",
       "year": 2026,
@@ -202,7 +202,7 @@
         "Sustainability"
       ],
       "hero": "media/Projects/Small-Doings.gif",
-      "heroAlt": "Placeholder project plate",
+      "heroAlt": "Small Doings",
       "caption": "Replace this with your strongest project screenshot or key art.",
       "summary": "This was a school assignment for an exhibition about Earth and sustainability. We made a four-player rhythm game about small microorganisms in the soil that process water and CO2. Each player has to hit their part in time with the beat, and together the players help restore the world as the background changes over time. I worked on the system design and programming, and I also made the music.",
       "stack": [
@@ -247,29 +247,29 @@
       "gallery": [
         {
           "src": "media/Projects/Small-Doings.gif",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "Small Doings showcase video",
+          "caption": "Small Doings showcase video"
         },
         {
           "src": "media/Projects/Small-doings.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Small doings creatures",
+          "caption": "Small doings creatures"
         },
         {
           "src": "media/Projects/Scriptable-Objects.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Scriptable object showcase in editore",
+          "caption": "Scriptable object for notes"
         },
         {
           "src": "media/Projects/AplyYourselfPrototype.png",
-          "alt": "Placeholder result plate",
-          "caption": "Result image"
+          "alt": "Class diagram",
+          "caption": "Class diagram"
         }
       ]
     },
     {
       "id": "Gluttonous Gallery",
-      "draft": true,
+      "draft": "False",
       "title": "Gluttonous Gallery",
       "subtitle": "A timed art-making game where you collect odd objects, weld them together and present your creation to a demanding critic.",
       "year": 2026,
@@ -289,7 +289,7 @@
         "Narrative"
       ],
       "hero": "media/Projects/Lord Messier2.png",
-      "heroAlt": "Placeholder project plate",
+      "heroAlt": "Gluttonous Gallery",
       "caption": "Replace this with your strongest project screenshot or key art.",
       "summary": "This was a five-person group assignment inspired by our visit to Design Panoptikum in Berlin. You play as La Lune, an artist who has to create artwork for Lord Messier, an art critic. He gives you a theme, and you have to find random objects and combine them into an artwork before time runs out. You then present it to him and he judges how well it matches the theme. If he is satisfied, he eats the artwork and gives you a new request. The cycle continues until you die.",
       "stack": [
@@ -333,18 +333,18 @@
       "gallery": [
         {
           "src": "media/Projects/Lord Messier.png",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "Lord Messier",
+          "caption": "Lord Messier"
         },
         {
           "src": "media/Projects/Lord Messier2.png",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "gameplay screenshot 1",
+          "caption": "gameplay screenshot 1"
         },
         {
           "src": "media/Projects/Gameplay.png",
-          "alt": "Placeholder process plate",
-          "caption": "Process image"
+          "alt": "gameplay screenshot 2",
+          "caption": "gameplay screenshot 2"
         }
       ]
     }
